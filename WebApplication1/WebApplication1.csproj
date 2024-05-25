@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
-	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Relesae|AnyCPU'">
-		<Optimize>True</Optimize>
+	<PropertyGroup>
+		<Configuration Condition=" '$(Configuration)' == '' ">Release</Configuration>
 	</PropertyGroup>
 
 </Project>
